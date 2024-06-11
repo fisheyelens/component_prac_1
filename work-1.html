@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+
+const root = document.getElementById('root');
+
+// const h1Component = () => {
+//   return "<h1> It's Alice! </h1>";
+// };
+
+
+const h1Component = (text) => {
+  return `<h1> ${text} </h1>`;
+};
+
+
+// 꿀 팁 1. : alt + shift + 방향 키 = 방향대로 복사 붙이기
+// 꿀 팁 2. : alt + 방향 키 = 해당 코드 이동하기
+
+const app = () => {
+  return `
+  ${h1Component("자우림이즈")}
+  ${h1Component("김윤아")}
+  ${h1Component("이선규")}
+  ${h1Component("김진만")}
+  ${h1Component("구태훈")}
+  `;
+};
+
+// console.log(h1Component()); // 비어있는 함수니까 아무것도 안나오징...
+console.log(app());
+// 결과 :   
+//   <h1> 자우림이즈 </h1>
+//   <h1> 김윤아 </h1>
+//   <h1> 이선규 </h1>
+//   <h1> 김진만 </h1>
+//   <h1> 구태훈 </h1>
+
+
+</script>
+</body>
+</html>
